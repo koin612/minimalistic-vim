@@ -53,6 +53,7 @@ call s:h("Normal", { "fg": s:fg, "bg": s:bg })
 call s:h("Cursor", { "fg": s:bg, "bg": s:fg })
 hi! link Identifier       Normal
 hi! link Type             Normal
+hi! link Folded           Normal
 
 " __Operator__
 call s:h("Noise", { "fg": s:statement, "gui": "NONE" })
@@ -61,6 +62,7 @@ hi LineNr           guifg=#444444
 hi CursorLineNr     guifg=#aaaaaa
 hi! link FoldColumn LineNr
 hi! link SignColumn LineNr
+hi! link NonText    LineNr
 
 " __Comment__
 call s:h("Comment", { "fg": s:comment })
@@ -81,7 +83,7 @@ hi! link Debug            Constant
 " __Statement__
 call s:h("Statement", { "fg": s:statement })
 hi! link Function         Statement
-hi! link Special          Statement
+hi! link Special          StatemenT
 hi! link Delimiter        Statement
 hi! link StorageClass     Function
 hi! link Structure        Function
@@ -102,5 +104,8 @@ hi! link Question ErrorMsg
 call s:h("WarningMsg",    {"fg": s:warning})
 
 " __StatusLine__
-call s:h("StatusLine", { "gui": "underline", "bg": s:bg, "fg": s:statement })
+call s:h("StatusLine", { "bg": s:bg, "fg": s:fg })
+call s:h("StatusLineNC", { "bg": s:bg, "fg": s:statement })
+
 call s:h("WildMenu",   { "gui": "underline", "bg": s:bg, "fg": s:statement })
+
