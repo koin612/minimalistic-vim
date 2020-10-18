@@ -104,8 +104,14 @@ hi! link Question ErrorMsg
 call s:h("WarningMsg",    {"fg": s:warning})
 
 " __StatusLine__
-call s:h("StatusLine", { "bg": s:bg, "fg": s:fg })
-call s:h("StatusLineNC", { "bg": s:bg, "fg": s:statement })
+call s:h("StatusLine",   { "gui": "underline", "bg": s:bg, "fg": s:fg })
+call s:h("StatusLineNC", { "gui": "underline", "bg": s:bg, "fg": s:statement })
 
-call s:h("WildMenu",   { "gui": "underline", "bg": s:bg, "fg": s:statement })
+" __WildMenu__
+call s:h("WildMenu",     { "gui": "underline", "bg": s:bg, "fg": s:statement })
 
+" __Pmenu__
+hi Pmenu guifg=#cccccc guibg=#3c3c3c
+hi PmenuSel guifg=#1d1d1d guibg=#777777
+hi! link PmenuSbar Pmenu
+hi! link PmenuThumb Pmenu
