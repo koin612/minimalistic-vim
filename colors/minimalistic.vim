@@ -115,3 +115,21 @@ hi Pmenu    guifg=#999999 guibg=#3c3c3c
 hi PmenuSel guifg=#cccccc guibg=#777777
 hi! link PmenuSbar  Pmenu
 hi! link PmenuThumb Pmenu
+
+" HTML
+hi! link htmlH1 Normal
+hi! link htmlH2 Normal
+hi! link htmlH3 Normal
+hi! link htmlH4 Normal
+hi! link htmlH5 Normal
+hi! link htmlH6 Normal
+
+" VimL
+hi! link vimOption Normal
+
+" XML
+hi link xmlTag     Statement
+hi link xmlAttrib  xmlTag
+hi link xmlEndTag  xmlTag
+hi link xmlTagName xmlTag
+
