@@ -126,11 +126,8 @@ hi! link htmlH6 Normal
 
 " VimL
 hi! link vimOption    Normal
-hi! link vimMapModKey Normal
-hi! link vimSetEqual  Normal
-hi! link vimNotation  Normal
-hi! link vimSet       Normal
 hi! link vimFuncName  Normal
+
 
 " XML
 hi link xmlTag     Statement
